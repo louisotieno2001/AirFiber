@@ -169,10 +169,12 @@
 .carousel {
   width: 100%;
   overflow: hidden;
+  height: 100vh;
 }
 
 .carousel-container {
   display: flex;
+  height: inherit;
   transition: transform 0.3s ease-in-out;
 }
 
