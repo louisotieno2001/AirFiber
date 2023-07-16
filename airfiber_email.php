@@ -1,3 +1,6 @@
+<?php 
+ require_once("./config/Database.php");
+?>
 <!doctype html>
 
 <html lang="en-US" class="no-js">
@@ -25,10 +28,18 @@
     <meta property="og:description"
         content="Do you want to learn about AirFibre Are you interested in unlimited internet for your home or office? Get in touch with us! " />
 
+  <style>
+     .socials__wa {
+			background-image: url(./Res/icon-whatsapp.png);
+			-moz-background-size: 1.5rem;
+			-o-background-size: 1.5rem;
+			-webkit-background-size: 1.5rem;
+			background-size: 1.5rem;
+		}
+  </style>
 
 
-
-    <link rel='stylesheet' id='screen-css' href='../styles/index.css' media='screen' />
+    <link rel='stylesheet' id='screen-css' href='./styles/index.css' media='screen' />
 
 
 </head>
@@ -36,7 +47,7 @@
 <body class="page-template page-template-page-contact page-template-page-contact-php page page-id-30">
 
     <header class="masthead" role="header">
-        <a href="./index.html" class="logo" style="padding: .9em;">
+        <a href="redirect.php?link=index" class="logo" style="padding: .9em;">
             <h3>AirFibre</h3>
         </a>
         <div class="wrap">
@@ -48,26 +59,26 @@
                         <ul class="sub-menu">
                             <li id="menu-item-51"
                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-51"><a
-                                    href="./home_internet.html">Home Internet</a></li>
+                                    href="redirect.php?link=home_internet.php">Home Internet</a></li>
                             <li id="menu-item-50"
                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-50"><a
-                                    href="./biz_internet.html">Biz Internet</a></li>
+                                    href="redirect.php?link=biz_internet.php">Biz Internet</a></li>
 
                         </ul>
                     </li>
                     <li id="menu-item-41"
                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-41">
-                        <a href="./airfiber_company.html">About Us</a>
+                        <a href="redirect.php?link=airfiber_company.php">About Us</a>
                         <ul class="sub-menu">
                             <li id="menu-item-58"
                                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-58"><a
-                                    href="./aifiber_mission.html">Our Mission</a></li>
+                                    href="redirect.php?link=aifiber_mission.php">Our Mission</a></li>
                             <li id="menu-item-202"
                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-202"><a
-                                    href="./airfiber_company.html">Our Company</a></li>
+                                    href="redirect.php?link=airfiber_company.php">Our Company</a></li>
                             <li id="menu-item-315"
                                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-315"><a
-                                    href="./airfiber_company.html">Coverage</a></li>
+                                    href="redirect.php?link=airfiber_company.php">Coverage</a></li>
 
                         </ul>
                     </li>
@@ -77,7 +88,7 @@
                         <ul class="sub-menu">
                             <li id="menu-item-425"
                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-425"><a
-                                    href="./airfibre_faqs.html">FAQ’s</a></li>
+                                    href="redirect.php?link=airfibre_faqs.php">FAQ’s</a></li>
 
                             <li id="menu-item-645"
                                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-645"><a
@@ -90,7 +101,7 @@
                         <ul class="sub-menu">
                             <li id="menu-item-67"
                                 class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-30 current_page_item menu-item-67">
-                                <a href="" aria-current="page">Email Us</a>
+                                <a href="redirect.php?link=airfiber_email.php" aria-current="page">Email Us</a>
                             </li>
                         </ul>
                     </li>
@@ -102,7 +113,7 @@
                         class="m-trigger menu-item menu-item-type-custom menu-item-object-custom menu-item-45"><a
                             href="">Call Us</a></li>
                     <li id="menu-item-44" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-44">
-                        <a href="./airfiber_get_connected.html" style="background-color: #001C30;">Get Connected</a>
+                        <a href="redirect.php?link=airfiber_get_connected.php" style="background-color: #001C30;">Get Connected</a>
                     </li>
                 </ul>
             </div>
@@ -115,7 +126,7 @@
         <div class="wrap">
 
             <article class="col col--txt">
-                <h1>Get in touch with us.</h1>
+                <h1>Get in touch.</h1>
             </article>
 
             <div class="col col--img" style="opacity:0.1">
@@ -124,16 +135,16 @@
         </div>
     </section>
 
-    <section class="row orange" id="content" style="background-color: #001C30;">
+    <section class="row orange" id="content" style="background-color: #001C30; margin-top:-23em;">
         <div class="wrap formed">
-            <div class="form-contact">
+            <div class="form-contact" style="margin-top: -1rem;">
                 <div class="inner">
                     <div role="form" class="wpcf7" id="wpcf7-f195-o1" lang="en-US" dir="ltr">
                         <div class="screen-reader-response">
                             <p role="status" aria-live="polite" aria-atomic="true"></p>
                             <ul></ul>
                         </div>
-                        <form action="/email-us/#wpcf7-f195-o1" method="post" class="wpcf7-form init"
+                        <form action="email_form_processor.php" method="post" class="wpcf7-form init"
                             novalidate="novalidate" data-status="init">
                             <div style="display: none;">
                                 <input type="hidden" name="_wpcf7" value="195" />
@@ -182,23 +193,23 @@
                 <div class="footer-col4">
                     <h4>Get Connected</h4>
                     <ul>
-                        <li><a href="./home_internet.html">Home Internet</a></li>
-                        <li><a href="./biz_internet.html">Biz Internet</a></li>
+                        <li><a href="redirect.php?link=home_internet.php">Home Internet</a></li>
+                        <li><a href="redirect.php?link=biz_internet.php">Biz Internet</a></li>
 
                     </ul>
                 </div>
                 <div class="footer-col4">
                     <h4>Buyer's Guide</h4>
                     <ul>
-                        <li><a href="./aifiber_mission.html">Our Mission</a></li>
-                        <li><a href="./airfiber_company.html">Coverage</a></li>
+                        <li><a href="redirect.php?link=aifiber_mission.php">Our Mission</a></li>
+                        <li><a href="redirect.php?link=airfiber_company.php">Coverage</a></li>
                         <li><a href="">Terms &amp; Conditions</a></li>
                     </ul>
                 </div>
                 <div class="footer-col4">
                     <h4>Join AirFibre</h4>
                     <ul>
-                        <li><a href="./airfiber_company.html">Our Company</a></li>
+                        <li><a href="redirect.php?link=airfiber_company.php">Our Company</a></li>
 
                     </ul>
                 </div>
@@ -241,7 +252,7 @@
                         <a href="">Call Us</a>
                     </li>
                     <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                        <a href="./airfiber_get_connected.html" class="internal">Get connected</a>
+                        <a href="redirect.php?link=airfiber_get_connected.php" class="internal">Get connected</a>
                     </li>
                 </ul>
                 <ul class="menu-main" role="navigation">
@@ -250,22 +261,22 @@
                         <a href="#">Products</a>
                         <ul class="sub-menu">
                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-51"><a
-                                    href="./home_internet.html">Home Internet</a></li>
+                                    href="redirect.php?link=home_internet.php">Home Internet</a></li>
                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-50"><a
-                                    href="./biz_internet.html">Biz Internet</a></li>
+                                    href="redirect.php?link=biz_internet.php">Biz Internet</a></li>
 
                         </ul>
                     </li>
                     <li
                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-41">
-                        <a href="./aifiber_mission.html">About Us</a>
+                        <a href="redirect.php?link=aifiber_mission.php">About Us</a>
                         <ul class="sub-menu">
                             <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-58"><a
-                                    href="./aifiber_mission.html">Our Mission</a></li>
+                                    href="redirect.php?link=aifiber_mission.php">Our Mission</a></li>
                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-202"><a
-                                    href="./airfiber_company.html">Our Company</a></li>
+                                    href="redirect.php?link=airfiber_company.php">Our Company</a></li>
                             <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-315"><a
-                                    href="./airfiber_company.html">Coverage</a></li>
+                                    href="redirect.php?link=airfiber_company.php">Coverage</a></li>
 
                         </ul>
                     </li>
@@ -274,7 +285,7 @@
                         <a href="#">Get Support</a>
                         <ul class="sub-menu">
                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-425"><a
-                                    href="./airfibre_faqs.html">FAQ’s</a></li>
+                                    href="redirect.php?link=airfibre_faqs.php">FAQ’s</a></li>
 
                             <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-645"><a
                                     target="_blank" rel="noopener" href="">T&#038;C&#8217;s</a></li>
@@ -287,7 +298,7 @@
 
                             <li
                                 class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-30 current_page_item menu-item-67">
-                                <a href="./airfiber_email.html" aria-current="page">Email Us</a>
+                                <a href="redirect.php?link=airfiber_email.php" aria-current="page">Email Us</a>
                             </li>
                         </ul>
                     </li>

@@ -1,23 +1,22 @@
+
 <!doctype html>
+
 <html lang="en-US" class="no-js">
 
 <head>
 	<meta charset="UTF-8">
-	<title>About Us - AirFibre | AirFibre</title>
-	<link href="//www.google-analytics.com" rel="dns-prefetch">
+	<title>AirFiber</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<meta name="description"
-		content="AirFibre is opening opportunities for education, work, and entertainment by bringing reliable internet to rural Kenya. Get connected today!" />
-	<meta property="og:locale" content="en_US" />
-	<meta property="og:type" content="article" />
-	
-		
-	<link rel="stylesheet" href="/styles/index.css">
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap"
+		rel="stylesheet">
+	<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
 
+	<link rel='stylesheet' id='screen-css' href='./styles/index.css' media='screen' />
+	
 	<style type="text/css" id="wp-custom-css">
 		.home .tricon p {
 			position: relative;
@@ -50,7 +49,7 @@
 			box-shadow: none !important;
 			margin: 0 6.6rem 2rem 0;
 			float: left;
-			width: 3rem;
+			width: 30rem;
 			height: 30rem;
 		}
 
@@ -58,6 +57,13 @@
 			padding-top: 8rem;
 		}
 
+		.socials__wa {
+			background-image: url(./Res/icon-whatsapp.png);
+			-moz-background-size: 1.5rem;
+			-o-background-size: 1.5rem;
+			-webkit-background-size: 1.5rem;
+			background-size: 1.5rem;
+		}
 
 		@media screen and (max-width: 580px) {
 			.wrap__inne {
@@ -75,11 +81,11 @@
 	</style>
 </head>
 
-<body class="page-template page-template-page-about page-template-page-about-php page page-id-18 page-parent">
+<body class="home page-template-default page page-id-2">
 
 	<header class="masthead" role="header">
-		<a href="./index.html" class="logo" style="padding: .9em;">
-			<h3>AirFibre</h3>
+		<a href="redirect.php?link=index" class="logo" style="padding: .9em;">
+			<h3>AirFiber</h3>
 		</a>
 		<div class="wrap">
 			<div class="masthead__left">
@@ -90,26 +96,25 @@
 						<ul class="sub-menu">
 							<li id="menu-item-51"
 								class="menu-item menu-item-type-post_type menu-item-object-page menu-item-51"><a
-									href="./home_internet.html">Home Internet</a></li>
+									href="redirect.php?link=home_internet.php">Home Internet</a></li>
 							<li id="menu-item-50"
 								class="menu-item menu-item-type-post_type menu-item-object-page menu-item-50"><a
-									href="./biz_internet.html">Biz Internet</a></li>
+									href="redirect.php?link=biz_internet.php">Biz Internet</a></li>
 						</ul>
 					</li>
 					<li id="menu-item-41"
-						class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-18 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-41">
-						<a href="./aifiber_mission.html" aria-current="page">About Us</a>
+						class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-41">
+						<a href="redirect.php?link=airfiber_company.php">About Us</a>
 						<ul class="sub-menu">
 							<li id="menu-item-58"
-								class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-58">
-								<a href="./aifiber_mission.html" aria-current="page">Our Mission</a></li>
+								class="menu-item menu-item-type-custom menu-item-object-custom menu-item-58"><a
+									href="redirect.php?link=airfiber_mission.php">Our Mission</a></li>
 							<li id="menu-item-202"
 								class="menu-item menu-item-type-post_type menu-item-object-page menu-item-202"><a
-									href="./airfiber_company.html">Our Company</a></li>
+									href="redirect.php?link=airfiber_company.php">Our Company</a></li>
 							<li id="menu-item-315"
 								class="menu-item menu-item-type-custom menu-item-object-custom menu-item-315"><a
-									href="./airfiber_company.html">Coverage</a></li>
-
+									href="redirect.php?link=airfiber_company.php">Coverage</a></li>
 						</ul>
 					</li>
 					<li id="menu-item-42"
@@ -118,8 +123,7 @@
 						<ul class="sub-menu">
 							<li id="menu-item-425"
 								class="menu-item menu-item-type-post_type menu-item-object-page menu-item-425"><a
-									href="./airfibre_faqs.html">FAQ’s</a></li>
-
+									href="redirect.php?link=airfibre_faqs.php">FAQ’s</a></li>
 							<li id="menu-item-645"
 								class="menu-item menu-item-type-custom menu-item-object-custom menu-item-645"><a
 									target="_blank" rel="noopener" href="">T&#038;C&#8217;s</a></li>
@@ -132,7 +136,7 @@
 							
 							<li id="menu-item-67"
 								class="menu-item menu-item-type-post_type menu-item-object-page menu-item-67"><a
-									href="./airfiber_email.html">Email Us</a></li>
+									href="redirect.php?link=airfiber_email.php">Email Us</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -143,127 +147,53 @@
 						class="m-trigger menu-item menu-item-type-custom menu-item-object-custom menu-item-45"><a
 							href="">Call Us</a></li>
 					<li id="menu-item-44" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-44">
-						<a href="./airfiber_get_connected.html" style="background-color: #001C30;">Get Connected</a></li>
+						<a href="redirect.php?link=airfiber_get_connected.php" style="background-color: #001C30;">Get Connected</a></li>
 				</ul>
 			</div>
 		</div>
 	</header>
 	<!--/.header-->
 
-	<section class="banner" style="background-color: #93c580;">
-		<div class="inner">
-			<div class="wrap">
 
-				<article class="col col--txt">
-					<h2 style="color: #001C30;">Consider this</h2>
-					<p>Does a young child growing up in a village have the same opportunities for success as others
-						raised in one of Nairobi's suburbs?</p>
-				</article>
-			</div>
+	<section class="banner" style="background-color: #93c580;">
+		<div class="wrap">
+
+			<article class="col col--txt">
+				<h1>Unlimited high-speed internet.</h1>
+				<h2 style="color: #001C30;">Opportunity in your hands</h2>
+				<p>Work, learn, stream, and stay connected with your close ones using our unlimited internet packages
+					for home/office.</p>
+				<p class="large v-desktop"><a href="redirect.php?link=airfiber_get_connected.php" class="button button--primary" style="background-color: #001C30;">Get connected</a></p>
+			</article>
 		</div>
 	</section>
 
-	<section class="row banner__ext orange" id="story" >
+	<section class="blue blue--inverted">
 		<div class="wrap">
 			<div class="tricons tricons--left">
 				<div class="tricon">
-					<p>William Kamkwamba (Masitala) learnt how to build a wind turbine by reading old books. He powered
-						his home, brought drinking water to his village.</p>
-					<p><strong>He proved it's possible.</strong></p>
+					<div class="tricon__img" style="background-image:url(./Res/technician.jpg)"></div>
+					<p>Founded: <strong>2012</strong><br />
+						Commercialised: <strong>2016</strong><br />
+						Reconfigured: <strong>2022</strong></p>
 				</div>
 				<div class="tricon">
-					<p>Mourine Apuu (Lodwar) got an opportunity to learn IT at Learning Lions. She went on to become a
-						teacher, bringing Media and IT skills to her community.</p>
-					<p><strong>She proved it's possible.</strong></p>
+					<div class="tricon__img" style="background-image:url(./Res/Coverage.jpg)"></div>
+					<p>Counties covered: <strong>18</strong></p>
+
 				</div>
 				<div class="tricon">
-					<p>Julius Yego (Cheptonon) learnt to throw a Javelin by watching YouTube videos. He won silver at
-						the Olympics, and holds the African record.</p>
-					<p><strong>He proved it's possible.</strong></p>
+					<div class="tricon__img" style="background-image:url(./Res/boda.jpg); background-position: center;"></div>
+					<p>Unlimited internet<br />
+						starting from <strong>2500</strong></p>
+
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<section class="banner banner--subline white" style="background-color: #001C30;color: #fff;">
-		<div class="inner">
-			<div class="wrap">
-				<article class="wrap__inne">
-					<p class="no-p">That's the power of knowledge and connections made possible.</p>
-				</article>
-			</div>
-		</div>
-	</section>
 
 
-	<section class="row" >
-		<div class="wrap">
-			<div class="wrap__inne">
-				<div class="wrap wrap--opportunities" >
-					<img src="../Res/idea.png" alt="" >
-				</div>
-				<h3 class="wrap--opportune">This is our why. This is our mission.</h3>
-				<p class="no-line">It's not just about connecting you to the internet. <br>It's about opening a world of
-					opportunities for you and your family.</p>
-			</div>
-		</div>
-		
-		<div class="wrap pullop">
-			<div class="wrap__inne">
-				<h3>These are our values. Our compass.</h3>
-			</div>
-		</div>
-		<div class="wrap pullop">
-			<div class="tricons">
-				<div class="tricon">
-					<div class="tricon__icon tricon__icon--customers"></div>
-					<h4>Customer First</h4>
-					<p>Our decisions are guided by what will have the most real impact with our customers.</p>
-				</div>
-				<div class="tricon">
-					<div class="tricon__icon tricon__icon--limits"></div>
-					<h4>Pushing the Limits</h4>
-					<p>We go above and beyond the task at hand, for our customers, colleagues, company and community.
-					</p>
-				</div>
-				<div class="tricon">
-					<div class="tricon__icon tricon__icon--adventure"></div>
-					<h4>Spirit of Adventure</h4>
-					<p>We're always exploring and unlocking new frontiers. Our everyday stories are always inspiring.
-					</p>
-				</div>
-			</div>
-		</div>
-		<div class="wrap">
-			<div class="wrap__inne">
-				<h3>And the value we deliver to customers.</h3>
-			</div>
-		</div>
-		<div class="wrap pullop">
-			<div class="tricons">
-				<div class="tricon">
-					<div class="tricon__icon tricon__icon--affordable"></div>
-					<h4>Affordability</h4>
-					<p>To provide affordable Internet, making it more accessible.</p>
-				</div>
-				<div class="tricon">
-					<div class="tricon__icon tricon__icon--goals"></div>
-					<h4>Achieve Goals</h4>
-					<p>To help our customers achieve their goals, allowing them to get ahead in life - for themselves,
-						their families and their businesses.</p>
-				</div>
-				<div class="tricon">
-					<div class="tricon__icon tricon__icon--utility"></div>
-					<h4>Necessary Utility</h4>
-					<p>Provide Internet as it is much more than a convenience or good-to-have, but becoming a key part
-						of daily functions.</p>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!--<section class="row banner__ext" id="values">
-    </section>-->
 
 
 	<footer class="bothom" id="footer">
@@ -272,30 +202,28 @@
 				<div class="footer-col4">
 					<h4>Get Connected</h4>
 					<ul>
-						<li><a href="./home_internet.html">Home Internet</a></li>
-						<li><a href="./biz_internet.html">Biz Internet</a></li>
+						<li><a href="redirect.php?link=home_internet.php">Home Internet</a></li>
+						<li><a href="redirect.php?link=biz_internet.php">Biz Internet</a></li>
 					</ul>
 				</div>
 				<div class="footer-col4">
 					<h4>Buyer's Guide</h4>
 					<ul>
-						<li><a href="./aifiber_mission.html">Our Mission</a></li>
-						<li><a href="./airfiber_company.html">Coverage</a></li>
+						<li><a href="redirect.php?link=aifiber_mission.php">Our Mission</a></li>
+						<li><a href="redirect.php?link=airfiber_company.php">Coverage</a></li>
 						<li><a href="">Terms &amp; Conditions</a></li>
 					</ul>
 				</div>
 				<div class="footer-col4">
-					<h4>Join AirFibre</h4>
+					<h4>Join AirFiber</h4>
 					<ul>
-						<li><a href="./airfiber_company.html">Our Company</a></li>
-
-						
+						<li><a href="redirect.php?airfiber_company.php">Our Company</a></li>
 					</ul>
 				</div>
 				<div class="footer-col4">
 					<h4>Talk to Us</h4>
 					<ul>
-						<li><a href="">Call Us</a></li>
+						<li><a href="">Number</a></li>
 						<li>&nbsp;</li>
 					</ul>
 					<ul class="socials">
@@ -312,7 +240,7 @@
 		<div class="bothom__mwisho">
 			<div class="wrap">
 				<div class="footer-col4">
-					<p class="small">AirFibre &copy; 2023. All rights reserved.</p>
+					<p class="small">AirFiber &copy; 2023. All rights reserved.</p>
 				</div>
 				<div class="footer-col4">
 				</div>
@@ -326,10 +254,10 @@
 
 				<ul class="menu-mini" role="navigation">
 					<li class="menu-item menu-item-type-custom menu-item-object-custom">
-						<a href="">Call Us</a>
+						<a href="">Call us</a>
 					</li>
 					<li class="menu-item menu-item-type-post_type menu-item-object-page">
-						<a href="./airfiber_get_connected.html" class="internal">Get connected</a>
+						<a href="redirect.php?link=airfiber_get_connected.php" class="internal">Get connected</a>
 					</li>
 				</ul>
 				<ul class="menu-main" role="navigation">
@@ -338,23 +266,23 @@
 						<a href="#">Products</a>
 						<ul class="sub-menu">
 							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-51"><a
-									href="./home_internet.html">Home Internet</a></li>
+									href="redirect.php?link=home_internet.php">Home Internet</a></li>
 							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-50"><a
-									href="./biz_internet.html">Biz Internet</a></li>
+									href="redirect.php?link=biz_internet.php">Biz Internet</a></li>
+							
 						</ul>
 					</li>
 					<li
-						class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-18 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-41">
-						<a href="./aifiber_mission.html" aria-current="page">About Us</a>
+						class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-41">
+						<a href="redirect.php?link=aifiber_mission.php">About Us</a>
 						<ul class="sub-menu">
-							<li
-								class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-58">
-								<a href="./aifiber_mission.html" aria-current="page">Our Mission</a></li>
+							<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-58"><a
+									href="redirect.php?link=aifiber_mission.php">Our Mission</a></li>
 							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-202"><a
-									href="./airfiber_company.html">Our Company</a></li>
+									href="redirect.php?link=airfiber_company.php">Our Company</a></li>
 							<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-315"><a
-									href="./airfiber_company.html">Coverage</a></li>
-
+									href="redirect.php?link=airfiber_company.php">Coverage</a></li>
+							
 						</ul>
 					</li>
 					<li
@@ -362,8 +290,8 @@
 						<a href="#">Get Support</a>
 						<ul class="sub-menu">
 							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-425"><a
-									href="./airfibre_faqs.html">FAQ’s</a></li>
-
+									href="redirect.php?link=airfibre_faqs.php">FAQ’s</a></li>
+							
 							<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-645"><a
 									target="_blank" rel="noopener" href="">T&#038;C&#8217;s</a></li>
 						</ul>
@@ -372,9 +300,8 @@
 						class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-43">
 						<a href="#">Talk to Us</a>
 						<ul class="sub-menu">
-							
 							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-67"><a
-									href="./airfiber_email.html">Email Us</a></li>
+									href="redirect.php?link=airfiber_email.php">Email Us</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -382,8 +309,6 @@
 		</nav>
 
 	</footer>
-
-
 </body>
 
 </html>
