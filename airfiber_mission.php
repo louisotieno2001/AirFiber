@@ -107,11 +107,11 @@
 					</li>
 					<li id="menu-item-41"
 						class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-18 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-41">
-						<a href="redirect.php?link=aifiber_mission.php" aria-current="page">About Us</a>
+						<a href="redirect.php?link=airfiber_mission.php" aria-current="page">About Us</a>
 						<ul class="sub-menu">
 							<li id="menu-item-58"
 								class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-58">
-								<a href="redirect.php?link=aifiber_mission.php" aria-current="page">Our Mission</a></li>
+								<a href="redirect.php?link=airfiber_mission.php" aria-current="page">Our Mission</a></li>
 							<li id="menu-item-202"
 								class="menu-item menu-item-type-post_type menu-item-object-page menu-item-202"><a
 									href="redirect.php?link=airfiber_company.php">Our Company</a></li>
@@ -288,7 +288,7 @@
 				<div class="footer-col4">
 					<h4>Buyer's Guide</h4>
 					<ul>
-						<li><a href="redirect.php?link=aifiber_mission.php">Our Mission</a></li>
+						<li><a href="redirect.php?link=airfiber_mission.php">Our Mission</a></li>
 						<li><a href="redirect.php?link=airfiber_company.php">Coverage</a></li>
 						<li><a href="">Terms &amp; Conditions</a></li>
 					</ul>
@@ -354,11 +354,11 @@
 					</li>
 					<li
 						class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-18 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-41">
-						<a href="redirect.php?link=aifiber_mission.php" aria-current="page">About Us</a>
+						<a href="redirect.php?link=airfiber_mission.php" aria-current="page">About Us</a>
 						<ul class="sub-menu">
 							<li
 								class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-58">
-								<a href="redirect.php?link=aifiber_mission.php" aria-current="page">Our Mission</a></li>
+								<a href="redirect.php?link=airfiber_mission.php" aria-current="page">Our Mission</a></li>
 							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-202"><a
 									href="redirect.php?link=airfiber_company.php">Our Company</a></li>
 							<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-315"><a

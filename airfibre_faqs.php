@@ -393,7 +393,7 @@
 						<a href="redirect.php?link=airfiber_company.php">About Us</a>
 						<ul class="sub-menu">
 							<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-58"><a
-									href="redirect.php?link=aifiber_mission.php">Our Mission</a></li>
+									href="redirect.php?link=airfiber_mission.php">Our Mission</a></li>
 							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-202"><a
 									href="redirect.php?link=airfiber_company.php">Our Company</a></li>
 							<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-315"><a

@@ -111,7 +111,7 @@
 						<ul class="sub-menu">
 							<li id="menu-item-58"
 								class="menu-item menu-item-type-custom menu-item-object-custom menu-item-58"><a
-									href="redirect.php?airfiber_mission.php">Our Mission</a></li>
+									href="redirect.php?link=airfiber_mission.php">Our Mission</a></li>
 							<li id="menu-item-202"
 								class="menu-item menu-item-type-post_type menu-item-object-page menu-item-202"><a
 									href="redirect.php?link=airfiber_company.php">Our Company</a></li>
@@ -199,7 +199,7 @@
 						<h2>3,500 <span>+ installation fee</span></h2>
 						<div class="product-details">Fast web browsing<br />
 							HD movie and music streaming x 1 device<br />
-							Video calls and conferencing x 2 devices<br />
+							Video calls and conferencing x 2 devices<br /> 
 							2-3 devices sharing</div>
 						<p class="product-cta"><a href="redirect.php?link=airfiber_get_connected.php" class="button button--primary"
 								style="background-color:#001C30">Get connected</a></p>
@@ -237,7 +237,7 @@
 				<div class="footer-col4">
 					<h4>Buyer's Guide</h4>
 					<ul>
-						<li><a href="redirect.php?link=aifiber_mission.php">Our Mission</a></li>
+						<li><a href="redirect.php?link=airfiber_mission.php">Our Mission</a></li>
 						<li><a href="redirect.php?link=airfiber_company.php">Coverage</a></li>
 						<li><a href="">Terms &amp; Conditions</a></li>
 					</ul>
@@ -305,7 +305,7 @@
 						<a href="redirect.php?link=airfiber_company.php">About Us</a>
 						<ul class="sub-menu">
 							<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-58"><a
-									href="redirect.php?link=aifiber_mission.php">Our Mission</a></li>
+									href="redirect.php?link=airfiber_mission.php">Our Mission</a></li>
 							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-202"><a
 									href="redirect.php?link=airfiber_company.php">Our Company</a></li>
 							<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-315"><a

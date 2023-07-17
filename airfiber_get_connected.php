@@ -1,5 +1,27 @@
 <?php
  require_once("./config/Database.php");
+ if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $db = new Database();
+    $conn = $db->getConnection();
+
+    // Sanitize inputs (you can use other methods for sanitization)
+    $name = htmlspecialchars($_POST['your-name']);
+    $email = htmlspecialchars($_POST['your-email']);
+    $phone = htmlspecialchars($_POST['your-phone']);
+	$package = htmlspecialchars($_POST['your-package']);
+	$town = htmlspecialchars($_POST['your-town']);
+    $message = htmlspecialchars($_POST['your-message']);
+
+    // Insert data into the 'emails_list' table
+    $insert_sql = "INSERT INTO connection_requests (name, email, phone, package, town, message) VALUES (?, ?, ?, ?, ?, ?)";
+    $stmt = $conn->prepare($insert_sql);
+    $stmt->bind_param("ssisss", $name, $email, $phone, $package, $town, $message);
+    $stmt->execute();
+
+    // Redirect to success page or display a success message
+    header("Location: success.php");
+    exit();
+}
 ?>
 <!doctype html>
 <html lang="en-US" class="no-js">
@@ -120,7 +142,7 @@
 						<ul class="sub-menu">
 							<li id="menu-item-58"
 								class="menu-item menu-item-type-custom menu-item-object-custom menu-item-58"><a
-									href="redirect.php?link=aifiber_mission.php">Our Mission</a></li>
+									href="redirect.php?link=airfiber_mission.php">Our Mission</a></li>
 							<li id="menu-item-202"
 								class="menu-item menu-item-type-post_type menu-item-object-page menu-item-202"><a
 									href="redirect.php?link=airfiber_company.php">Our Company</a></li>
@@ -194,7 +216,7 @@
 							<p role="status" aria-live="polite" aria-atomic="true"></p>
 							<ul></ul>
 						</div>
-						<form action="connectio_request_form_processor.php" method="post" class="wpcf7-form init"
+						<form action="" method="post" class="wpcf7-form init"
 							novalidate="novalidate" data-status="init">
 							<div style="display: none;">
 								<input type="hidden" name="_wpcf7" value="196" />
@@ -222,9 +244,9 @@
 											class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-tel"
 											aria-invalid="false" placeholder="0711 223344" /></span> </label></p>
 							<p><label> Package<br />
-									<span class="wpcf7-form-control-wrap" data-name="your-package"><select name="menu-574"
+									<span class="wpcf7-form-control-wrap" data-name="your-package"><select name="your-package"
 											class="wpcf7-form-control wpcf7-select" aria-invalid="false">
-											<option value="Max">Home</option>
+											<option value="Home">Home</option>
 											<option value="Biz">Biz</option>
 										</select></span> </label></p>
 							<p><label> Town<br />
@@ -328,7 +350,7 @@
 						<a href="redirect.php?link=airfiber_company.php">About Us</a>
 						<ul class="sub-menu">
 							<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-58"><a
-									href="redirect.php?link=aifiber_mission.redirect.php">Our Mission</a></li>
+									href="redirect.php?link=airfiber_mission.redirect.php">Our Mission</a></li>
 							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-202"><a
 									href="redirect.php?link=airfiber_company.php">Our Company</a></li>
 							<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-315"><a

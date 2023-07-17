@@ -1,6 +1,29 @@
-<?php 
- require_once("./config/Database.php");
+<?php
+session_start();
+require_once 'config/Database.php';
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $name = $_POST['your-name'] ?? '';
+    $email = $_POST['your-email'] ?? '';
+    $phone = $_POST['your-phone'] ?? '';
+    $message = $_POST['your-message'] ?? '';
+
+    // Data validation and sanitization here
+
+    // Get the database connection
+    $db = new Database();
+    $conn = $db->getConnection();
+
+    // Prepare and execute the SQL statement to insert data into the emails_list table
+    $stmt = $conn->prepare("INSERT INTO emails_list (name, email, phone, message) VALUES (?, ?, ?, ?)");
+    $stmt->bind_param("ssis", $name, $email, $phone, $message);
+    $stmt->execute();
+
+    // You can add a success message or redirect to a success page here
+    header("Location: success.php");
+}
 ?>
+
 <!doctype html>
 
 <html lang="en-US" class="no-js">
@@ -72,7 +95,7 @@
                         <ul class="sub-menu">
                             <li id="menu-item-58"
                                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-58"><a
-                                    href="redirect.php?link=aifiber_mission.php">Our Mission</a></li>
+                                    href="redirect.php?link=airfiber_mission.php">Our Mission</a></li>
                             <li id="menu-item-202"
                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-202"><a
                                     href="redirect.php?link=airfiber_company.php">Our Company</a></li>
@@ -144,7 +167,7 @@
                             <p role="status" aria-live="polite" aria-atomic="true"></p>
                             <ul></ul>
                         </div>
-                        <form action="email_form_processor.php" method="post" class="wpcf7-form init"
+                        <form action="" method="post" class="wpcf7-form init"
                             novalidate="novalidate" data-status="init">
                             <div style="display: none;">
                                 <input type="hidden" name="_wpcf7" value="195" />
@@ -201,7 +224,7 @@
                 <div class="footer-col4">
                     <h4>Buyer's Guide</h4>
                     <ul>
-                        <li><a href="redirect.php?link=aifiber_mission.php">Our Mission</a></li>
+                        <li><a href="redirect.php?link=airfiber_mission.php">Our Mission</a></li>
                         <li><a href="redirect.php?link=airfiber_company.php">Coverage</a></li>
                         <li><a href="">Terms &amp; Conditions</a></li>
                     </ul>
@@ -269,10 +292,10 @@
                     </li>
                     <li
                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-41">
-                        <a href="redirect.php?link=aifiber_mission.php">About Us</a>
+                        <a href="redirect.php?link=airfiber_mission.php">About Us</a>
                         <ul class="sub-menu">
                             <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-58"><a
-                                    href="redirect.php?link=aifiber_mission.php">Our Mission</a></li>
+                                    href="redirect.php?link=airfiber_mission.php">Our Mission</a></li>
                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-202"><a
                                     href="redirect.php?link=airfiber_company.php">Our Company</a></li>
                             <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-315"><a

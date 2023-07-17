@@ -115,7 +115,7 @@
 						<ul class="sub-menu">
 							<li id="menu-item-58"
 								class="menu-item menu-item-type-custom menu-item-object-custom menu-item-58"><a
-									href="redirect.php?link=aifiber_mission.php">Our Mission</a></li>
+									href="redirect.php?link=airfiber_mission.php">Our Mission</a></li>
 							<li id="menu-item-202"
 								class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-197 current_page_item menu-item-202">
 								<a href="redirect.php?link=airfiber_company.php" aria-current="page">Our Company</a></li>
@@ -163,8 +163,8 @@
 	<!--/.header-->
 
 
-	<section class="banner banner--padded">
-		<div class="banner__full" style="background-image:url('./Res/IMG_2236\ \(1\).jpeg');"></div>
+	<section class="banner banner--padded" >
+		<div class="banner__full" style="background-image:url('./Res/IMG_2236\ \(1\).jpeg'); height: 110rem; "></div>
 	</section>
 
 	<section class="row" id="content" style="background-color: #93c580;">
@@ -193,9 +193,12 @@
 
 
 				<h2 class="wp-block-heading" id="coverage" style="color: #001C30;">Coverage</h2>
-
+                <ul>
+					<li>Kisii County</li>
+					<li>Homabay county</li>
+				</ul>
 				<br>
-				<a href="" class="button button--primary" style="background-color:#001C30">Get connected</a>
+				<a href="redirect.php?link=airfiber_get_connected.php" class="button button--primary" style="background-color:#001C30">Get connected</a>
 			</div>
 		</div>
 	</section>
@@ -214,7 +217,7 @@
 				<div class="footer-col4">
 					<h4>Buyer's Guide</h4>
 					<ul>
-						<li><a href="redirect.php?link=aifiber_mission.php">Our Mission</a></li>
+						<li><a href="redirect.php?link=airfiber_mission.php">Our Mission</a></li>
 						<li><a href="redirect.php?link=airfiber_company.php">Coverage</a></li>
 						<li><a href="">Terms &amp; Conditions</a></li>
 					</ul>
@@ -281,10 +284,10 @@
 					</li>
 					<li
 						class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor current-menu-ancestor current-menu-parent current-custom-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-41">
-						<a href="redirect.php?link=aifiber_mission.php">About Us</a>
+						<a href="redirect.php?link=airfiber_mission.php">About Us</a>
 						<ul class="sub-menu">
 							<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-58"><a
-									href="redirect.php?link=aifiber_mission.php">Our Mission</a></li>
+									href="redirect.php?link=airfiber_mission.php">Our Mission</a></li>
 							<li
 								class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-197 current_page_item menu-item-202">
 								<a href="redirect.php?link=airfiber_company.php" aria-current="page">Our Company</a></li>
